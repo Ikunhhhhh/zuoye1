@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 void converter(void*a, size_t size)
 {
     if(size==sizeof(int))
