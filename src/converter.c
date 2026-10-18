@@ -70,7 +70,7 @@ void converter(void*a, size_t size)
         }
     printf("\n");
     }
-    if(size!=sizeof(int)||size!=sizeof(double))
+    if(size!=sizeof(int)&&size!=sizeof(double))
     {
         printf("Unknown type\n");
     }
