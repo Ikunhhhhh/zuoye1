@@ -1,0 +1,4 @@
+cbuild/
+bin/
+.DS_Store            //忽略系统文件
+Thumbs.db            
