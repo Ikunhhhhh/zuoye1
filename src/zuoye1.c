@@ -5,6 +5,8 @@
 #include"converter.h"
 #include"texttype.h"
 #include"fopen.h"
+#include"read.h"
+#include"write.h"
 int main()
 {
   char cwd[100];
@@ -33,6 +35,22 @@ int main()
     printf("0 to exti\n");
     scanf(" %d",&intput);    
   } while (intput);
-  
+  char tag;
+  printf("写 y or n");
+  scanf(" %c\n",&tag);
+  switch (tag)
+  {
+  case 'y':
+    write(file);
+    break;
+    case 'n':
+    printf("不写\n");
+    break;
+  default:
+  printf("wrong\n");
+    break;
+  }
+
+  read(file);
   return 0;    
 }
