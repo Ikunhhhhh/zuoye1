@@ -1,6 +1,6 @@
 #include<stdio.h>
-
-void fopener(char*filename)
+#include"fclose.h"
+FILE* fopener(char*filename)
 {
    char*filetemp=filename;
    FILE*ioFile=fopen(filetemp,"r+");
@@ -10,14 +10,16 @@ void fopener(char*filename)
    }
    else{
     printf("succsess\n");
-    int k=fclose(ioFile);
-     if(k==0)
-   {
-    printf("close success\n");
+   //  int k=fclose(ioFile);
+   //   if(k==0)
+   // {
+   //  printf("close success\n");
+   // }
+   // else if (k==EOF)
+   // {
+   //  printf("close failed\n");
+   // }
+   fcloser(ioFile);
    }
-   else if (k==EOF)
-   {
-    printf("close failed\n");
-   }
-   }
+   return ioFile;
 }

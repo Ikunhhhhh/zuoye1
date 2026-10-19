@@ -2,3 +2,14 @@ cbuild/
 bin/
 .DS_Store            //忽略系统文件
 Thumbs.db            
+2.c
+2.exe  
+AsCII.c
+AscII.exe
+3.c
+4.c
+3.exe
+4.exe
+test.exe
+test.txt
+
